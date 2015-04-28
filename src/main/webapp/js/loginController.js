@@ -18,7 +18,7 @@
 	appController.controller('LoginController', ['$scope','$http', function ($scope,$http) {
 	
 		  $scope.formSubmit = function(item) {
-			  debugger;
+			  
 			  	console.log(item);
 			  };
 			  
