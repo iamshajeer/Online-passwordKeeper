@@ -1,6 +1,8 @@
 
 
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -48,6 +50,9 @@ public class LoginValidator extends HttpServlet {
 		//String password = request.getParameter("password");
 		
 		getLoginData("admin", "password");
+		
+		PrintWriter out = response.getWriter();
+		out.println("Shajeer Ahamed KP");
 		
 	}
 	
