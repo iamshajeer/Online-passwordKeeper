@@ -3,8 +3,8 @@
     
 <div class="container">
 
-    <form name="myForm" novalidate class="col-md-4 col-md-offset-4">
-        <h2>{{login.username}}</h2>
+    <form name="myForm" action="loginValidator" novalidate class="col-md-4 col-md-offset-4">
+       
         <div class="form-group">
             <input type="email" name="email" ng-model="login.username" required class="form-control input-lg" placeholder="Email">
             <span style="color:red" ng-show="login.email.$dirty && login.username.$invalid">
