@@ -1,7 +1,7 @@
 	var appController = angular.module('appController', []);
 	
 	
-	appController.factory('AccountGroup', ['$resource', 'Data', function ($resource, Data) {
+/*	appController.factory('AccountGroup', ['$resource', 'Data', function ($resource, Data) {
 	  return $resource(Data.rootUrl + 'admin/account_groups/:id', {id: '@id'}, 
 	    {
 	      query: {
@@ -13,7 +13,7 @@
 	      }
 	    }
 	  );
-	}]);
+	}]);*/
 	
 	appController.controller('LoginController', ['$scope','$http', function ($scope,$http) {
 	
