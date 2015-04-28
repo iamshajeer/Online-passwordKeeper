@@ -15,6 +15,9 @@
 	<!-- import scripts -->
 	
 	<script src="bower/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+	
 	<script src="bower/angular/angular.min.js" type="text/javascript"></script>
 	<script src="bower/angular-route/angular-route.min.js" type="text/javascript"></script>
 	
