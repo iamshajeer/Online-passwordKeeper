@@ -1,0 +1,17 @@
+{
+  "name": "passwordkeeper",
+  "version": "0.0.0",
+  "authors": [
+    "shajeer ahamed kp <info4shajeer@gmail.com>"
+  ],
+  "description": "password keeper application",
+  "main": "index.jsp",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
