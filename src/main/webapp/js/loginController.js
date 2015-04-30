@@ -15,16 +15,13 @@
 	  );
 	}]);*/
 	
-	appController.controller('LoginController', ['$scope','$http', function ($scope,$http) {
-	
+	appController.controller('LoginController', ['$scope','$http', function ($scope,$http,$location) {
+		
 		  $scope.formSubmit = function(item) {
 			  
-			  	console.log(item);
-			  };
-			  
+			  $location.path("/main");
 	
-		
-		
+			  };
 	/*	$http.post("url").success(function(data){
 			$scope.menuItem = data;
 		}).error(function(){
@@ -33,3 +30,22 @@
 		});
 	*/
 	}]);
+	
+	  appController.controller('MainController', ['$scope','$http', function ($scope,$http) {
+			alert("in");
+		  $scope.formSubmit = function(item) {
+			  
+			  	
+			  };
+			  
+	
+
+
+/*	$http.post("url").success(function(data){
+	$scope.menuItem = data;
+}).error(function(){
+	console.log("error");
+
+});
+*/
+}]);

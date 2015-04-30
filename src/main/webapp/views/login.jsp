@@ -3,7 +3,7 @@
     
 <div class="container">
 
-    <form name="myForm" action="loginValidator" novalidate class="col-md-4 col-md-offset-4">
+    <form name="myForm" novalidate class="col-md-4 col-md-offset-4">
        
         <div class="form-group">
             <input type="email" name="email" ng-model="login.username" required class="form-control input-lg" placeholder="Email">

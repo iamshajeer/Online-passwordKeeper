@@ -9,20 +9,11 @@
 <!-- section import styles -->
 <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.css"
 	type="text/css">
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	
 	<!-- import style closes -->
 	
 	<!-- import scripts -->
 	
 	<script src="bower/jquery/dist/jquery.min.js" type="text/javascript"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
 	
 	<script src="bower/angular/angular.min.js" type="text/javascript"></script>
 	<script src="bower/angular-route/angular-route.min.js" type="text/javascript"></script>

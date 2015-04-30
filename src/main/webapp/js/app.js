@@ -11,6 +11,10 @@ myApp.config(['$routeProvider',function ($routeProvider) {
 		templateUrl: 'views/login.jsp',
 		controller: 'LoginController'
 	}).
+	when('/main', {
+		templateUrl: 'views/Home.jsp',
+		controller: 'MainController'
+	}).
 	otherwise({ redirectTo: '/home' });
 	
 }]);
