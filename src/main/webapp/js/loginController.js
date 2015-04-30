@@ -17,9 +17,15 @@
 	
 	appController.controller('LoginController', ['$scope','$http', function ($scope,$http,$location) {
 		
+		url=""
+		
 		  $scope.formSubmit = function(item) {
-			  
-			  $location.path("/main");
+			  $http.post("url").success(function(data){
+					alert("success man");
+				}).error(function(){
+					alert("error");
+			
+				});
 	
 			  };
 	/*	$http.post("url").success(function(data){
