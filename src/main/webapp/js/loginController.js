@@ -17,14 +17,16 @@
 	
 	appController.controller('LoginController', ['$scope','$http', function ($scope,$http,$location) {
 		
-		url="/LoginValidator";
+		url="ValidateLogin";
+		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 		
 		  $scope.formSubmit = function(item) {
-			  $http.post(url).success(function(data, status, headers, config){
-					alert("success man");
+			  
+			  $http.get(url, {'username':'hello word!'}).success(function(data, status, headers, config){
+					console.log(data);
 				}).error(function(data, status, headers, config){
 					debugger;
-					alert(status);
+					//alert(status);
 			
 				});
 	

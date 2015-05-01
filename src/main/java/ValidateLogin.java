@@ -30,9 +30,8 @@ public class ValidateLogin extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("Hiiii");
+		doService(request, response);
+
 	}
 
 	/**
@@ -42,24 +41,19 @@ public class ValidateLogin extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("hiii");
+		doService(request, response);
 
 	}
-
-	public void service(HttpServletRequest request, HttpServletResponse response)
-			throws IOException {
-
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("<html>");
-		out.println("<head>");
-		out.println("<title>InputFormTest</title>");
-		out.println("</head>");
-		out.println("<body>");
-		out.println("<h1>User inserted:awesomeeee</h1>");
-		out.println("</body>");
+	
+	protected void doService(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		response.setContentType("text/json");
+		PrintWriter out = response.getWriter();	
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		out.println("{'msg':'hello word!'}");
+		
+		
 	}
+
 
 }
